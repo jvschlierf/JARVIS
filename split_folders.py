@@ -41,10 +41,10 @@ def train_test_split():
         val_FileNames = [src + '//' + name for name in val_FileNames.tolist()]
         test_FileNames = [src + '//' + name for name in test_FileNames.tolist()]
 
-        print('Total images: '+ str(len(allFileNames)))
-        print('Training: '+ str(len(train_FileNames)))
-        print('Validation: '+  str(len(val_FileNames)))
-        print('Testing: '+ str(len(test_FileNames)))
+        print('Total images: '+ str(len(allFileNames)+1))
+        print('Training: '+ str(len(train_FileNames)+1))
+        print('Validation: '+ str(len(val_FileNames)+1))
+        print('Testing: '+ str(len(test_FileNames)+1))
 
         # # Creating Train / Val / Test folders (One time use)
         os.makedirs(root_dir + '/train//' + cls)
