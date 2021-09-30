@@ -17,10 +17,10 @@ Principal = '/principal_skinner'
 def train_test_split():
     print("########### Train Test Val Script started ###########")
 
-    root_dir = '.gitignore/data_split'
+    root_dir = 'data_split'
     classes_dir = [Homer, Bart, Burns, Krusty, Lisa, Milhouse, Marge, Moe, Ned, Principal]
 
-    processed_dir = '.gitignore/data'
+    processed_dir = 'data'
 
     val_ratio = 0.15
     test_ratio = 0.15
