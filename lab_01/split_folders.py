@@ -17,10 +17,10 @@ Principal = '/principal_skinner'
 def train_test_split():
     print("########### Train Test Val Script started ###########")
 
-    root_dir = 'lab_01_split'
+    root_dir = '.gitignore/data_split'
     classes_dir = [Homer, Bart, Burns, Krusty, Lisa, Milhouse, Marge, Moe, Ned, Principal]
 
-    processed_dir = 'lab_01'
+    processed_dir = '.gitignore/data'
 
     val_ratio = 0.15
     test_ratio = 0.15
@@ -30,7 +30,7 @@ def train_test_split():
         print("$$$$$$$ Class Name " + cls + " $$$$$$$")
         src = processed_dir + cls  # Folder to copy images from
 
-        allFileNames = os.listdir(src)
+        allFileNames = [f for f in os.listdir(src) if not f.startswith('.')]# Skip hidden files
         np.random.shuffle(allFileNames)
         train_FileNames, val_FileNames, test_FileNames = np.split(np.array(allFileNames),
                                                                   [int(len(allFileNames) * (1 - (val_ratio + test_ratio))),
