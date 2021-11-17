@@ -11,6 +11,8 @@ except ValueError:
 
 try:
     os.mkdir("darknet/build/darknet/x64/data/obj/")
+    os.mkdir("darknet/build/darknet/x64/data/obj/test/")
+    os.mkdir("darknet/build/darknet/x64/data/obj/valid/")
 except FileExistsError:
     pass
 
@@ -33,6 +35,11 @@ for i in Folders:
     if "test" in subfolders:
         temp_valid += [f for f in os.listdir(i + "/valid") if f.endswith(".jpg")]
         temp_test += [f for f in os.listdir(i + "/test") if f.endswith(".jpg")]
+
+        [shutil.move(i + "/test/" + f, "darknet/build/darknet/x64/data/obj/test/") for f in os.listdir(i + "/test/")]
+        [shutil.move(i + "/valid/" + f, "darknet/build/darknet/x64/data/obj/test/") for f in os.listdir(i + "/valid/")]
+        subfolders.remove("test")
+        subfolders.remove("valid")
         # we try to move the label files to the function specified by darknet
         if names_bool:
             os.rename(i + "/test/_darknet.labels", "darknet/build/darknet/x64/data/obj.names")
@@ -50,8 +57,8 @@ for i in Folders:
 
 # add the path we are working in
 train_loc = [os.getcwd() + "darknet/build/darknet/x64/data/obj/" + f for f in temp_train]
-valid_loc = [os.getcwd() + "darknet/build/darknet/x64/data/obj/" + f for f in temp_valid]
-test_loc = [os.getcwd() + "darknet/build/darknet/x64/data/obj/" + f for f in temp_test]
+valid_loc = [os.getcwd() + "darknet/build/darknet/x64/data/obj/valid/" + f for f in temp_valid]
+test_loc = [os.getcwd() + "darknet/build/darknet/x64/data/obj/test/" + f for f in temp_test]
 
 # convert to pandas
 train_df = pd.DataFrame(train_loc)
