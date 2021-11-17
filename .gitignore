@@ -1,7 +1,11 @@
 lab_01/data/
 lab_01/logs/
+project_01/Output/
+project_01/Base_15/dlcv_last.weights
+project_01/Base_15/yolov4_last.weights
 <<<<<<< Updated upstream
 *.DS_Store
 =======
 lab_01/model/
 >>>>>>> Stashed changes
+/project_01/Data/
