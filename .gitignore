@@ -1,0 +1,12 @@
+lab_01/data/
+object_detection/data/
+lab_01/logs/
+lab_01/model/
+lab_01/.DS_Store
+lab_01/model/
+lab_01/pretrained_trained/
+.idea/aws.xml
+.idea/JARVIS.iml
+.idea/vcs.xml
+.idea/JARVIS.iml
+.idea/vcs.xml
