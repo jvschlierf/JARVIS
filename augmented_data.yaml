@@ -1,0 +1,5 @@
+train: final_augmented_data/train/images
+val: final_augmented_data/valid/images
+
+nc: 14
+names: ['Adidas', 'Apple Inc-', 'Coca-Cola', 'Emirates', 'Hard Rock Cafe', 'Mercedes-Benz', 'NFL', 'Nike', 'Pepsi', 'Puma', 'Starbucks', 'The North Face', 'Toyota', 'Under Armour']

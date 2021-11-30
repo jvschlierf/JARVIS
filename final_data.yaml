@@ -1,0 +1,6 @@
+train: yolo/final_train/images
+val: yolo/final_valid/images
+
+nc: 15
+names: ['Adidas', 'Apple Inc-', 'Chanel', 'Coca-Cola', 'Emirates', 'Hard Rock Cafe', 'Mercedes-Benz', 'NFL', 'Nike', 'Pepsi', 'Puma', 'Starbucks', 'The North Face', 'Toyota', 'Under Armour']
+
