@@ -23,10 +23,12 @@ This is a repo for the Computer Vision project, which is a part of the DSBA 2020
 
 
 In order to reproduce the results from Darknet Yolov4, please:
-  1. Download the trained weights **yolo4_trained.weights** from [Google Drive](https://drive.google.com/file/d/1j6MNI5Su-lYhSZBVPOB2241G25dII89t/view?usp=sharing).
-  2. Having installed Darknet, git clone our repo. Compile Darknet using the provided **Makefile**.
-  3. Go to Roboflow and download the re-annotated test set with the Darknet Yolo format and move to the Darknet folder. Move the downloaded images and weights to Darknet.
-  4. In the Darknet folder, run `./darknet detector test setup/obj.data setup/yolo-obj.cfg setup/yolo4_trained.weights -dont_show -ext_output < setup/test.txt > result.txt`
-  5. In the Darknet folder, run `python results_evaluation/pred_to_CSV.py "result.txt"`.
-  6. In the Darknet folder, run `python results_evaluation/GT_to_csv.py "annotations/* .txt"`.
-  7. Follow the Jupyter notebook **Darknet results** to verify the results.
+  1. Create a folder to test our results.
+  2. Download the trained weights **yolo4_trained.weights** from [Google Drive](https://drive.google.com/file/d/1j6MNI5Su-lYhSZBVPOB2241G25dII89t/view?usp=sharing).
+  3. Git clone darknet from https://github.com/AlexeyAB/darknet
+  4. Git clone our repo. Compile darknet using the `Makefile` provided by *us*.
+  5. Go to Roboflow and download the re-annotated test set with the Darknet Yolo format and move to `darknet/data/test`.
+  6. In the darknet folder, run `./darknet detector test ../setup/obj.data ../setup/yolo-obj.cfg ../yolo4_trained.weights -dont_show -ext_output < setup/test.txt > result.txt`
+  7. In the Darknet folder, run `python results_evaluation/pred_to_CSV.py "result.txt"`.
+  8. In the Darknet folder, run `python results_evaluation/GT_to_csv.py "annotations/* .txt"`.
+  9. Follow the Jupyter notebook **Darknet results** to verify the results.
