@@ -1,3 +1,17 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                Bocconi University                                     #
+#                       20600: Deep Learning for Computer Vision                        #
+#                                   Group JARVIS                                        #
+#                                Merging Workspaces                                     #
+#                                                                                       #
+# This script takes a directory containing multiple Roboflow workspaces in order to     #
+# merge them together in a freshly created directory. In particular, the annotations    # 
+# are merged in a single csv file, and all the images are moved in the same directories,#
+# depending on the required split (default is train, valid, test)                       #
+#                                                                                       #                 
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
 import os
 import shutil
 import pandas as pd

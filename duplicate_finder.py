@@ -1,3 +1,15 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                Bocconi University                                     #
+#                       20600: Deep Learning for Computer Vision                        #
+#                                   Group JARVIS                                        #
+#                                 Duplicate Finder                                      #
+#                                                                                       #
+# This script takes a directory as input and uses average hashing to identify potential #
+# duplicates, returning a list of potential duplicate pairs.                            #
+#                                                                                       #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+
 from PIL import Image
 import os
 import numpy as np
@@ -28,21 +40,5 @@ class DuplicateFinder:
                     print("Number of Duplicates: ", c, "\n")
                 else:
                     hashes[temp_hash] = image
-                   
-#        if len(duplicates) != 0:
-#            a = input("Do you want to delete these {} Images? Press Y or N:  ".format(len(duplicates)))
-#            space_saved = 0
-
-#            if(a.strip().lower() == "y"):
-
-#                for duplicate in duplicates:
-#                    space_saved += os.path.getsize(os.path.join(self.dirname,duplicate))
-                    
-#                    os.remove(os.path.join(self.dirname,duplicate))
-#                    print("{} Deleted Succesfully".format(duplicate))
-    
-#                print("\n\nYou saved {} mb of Space".format(round(space_saved/1000000),2))
-#        else:
-#            print("No Duplicates Found")
         
         return duplicates
