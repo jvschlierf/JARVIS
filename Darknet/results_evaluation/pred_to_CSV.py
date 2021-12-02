@@ -24,11 +24,9 @@ TO_SPLIT = """Enter Image Path:  Detection layer: 139 - type = 28
  Detection layer: 161 - type = 28 
 /home/labuser/Darknet/Augment/darknet/data/test/"""
 
-def read_data(path = PATH):
+def read_data(path):
     with open(path) as f:
         lines = f.read().split(TO_SPLIT)
-
-
 
     rows = []
     for line in lines:
