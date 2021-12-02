@@ -35,7 +35,7 @@ In order to reproduce the results from Darknet Yolov4, please:
 
 
 
-# Pytorch (Yolov5) results (version l and x)
+# Pytorch (Yolov5) results
 **version L**
 
 | Label        | Avg. IOU           |
