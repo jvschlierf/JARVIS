@@ -1,5 +1,6 @@
 # J.A.R.V.I.S.
 This is a repo for the Computer Vision project, which is a part of the DSBA 2020-2022.
+Below the results for- and instructions to recreate the algorithms we built and trained.
 
 # Darknet (Yolov4) results
 
@@ -36,7 +37,7 @@ In order to reproduce the results from Darknet Yolov4, please:
 
 
 # Pytorch (Yolov5) results
-**version L**
+**Version L**
 
 | Label        | Avg. IOU           |
 | ------------- |:-------------:| 
@@ -56,7 +57,7 @@ In order to reproduce the results from Darknet Yolov4, please:
 | Under Armour	 | 0.808131      |
 
 
-**version X**
+**Version X**
 
 | Label        | Avg. IOU           |
 | ------------- |:-------------:| 
@@ -77,18 +78,18 @@ In order to reproduce the results from Darknet Yolov4, please:
 
 
 In order to reproduce the results from Pytorch Yolov5 L and X, please:
-1. create a conda environment in your machine (with python 3.8)
+1. Create a conda environment in your machine (with python 3.8)
   `conda create -n "name" python=3.8`
   `conda install pytorch torchvision torchaudio cudatoolkit=11.3 -c pytorch`
-2. clone the github repository of yolov5 and install requirements
+2. Clone the github repository of yolov5 and install requirements
   `git clone https://github.com/ultralytics/yolov5`
   `cd yolov5`
   `pip install -r requirements.txt`
-3. inside yolov5 folder download the pre-trained weights (choose version (l or x l is faster x is better) and adjust image size if different from roboflow) here:  
+3. Inside yolov5 folder download the pre-trained weights (choose version (l or x l is faster x is better) and adjust image size if different from roboflow) here:  
   `python detect.py --weights yolov5l.pt --img 640` (the weights present are in the google folder)
   `python detect.py --weights yolov5x.pt --img 640`
-4. insert your train, test, valid folder inside the yolov5 folder where each train, test, and valid contains subfolders of images and labels. Make sure that the subfolder of labels contains txt where the label is a number and not a string.
-5. create a new .yaml file with data specification
+4. Insert your train, test, valid folder inside the yolov5 folder where each train, test, and valid contains subfolders of images and labels. Make sure that the subfolder of labels contains txt where the label is a number and not a string.
+5. Create a new .yaml file with data specification
 6. To train:
 `python train.py --img 640 --batch 12 --epochs 20 --data data/data.yaml --weights yolov5x.pt`
 
