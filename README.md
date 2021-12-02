@@ -84,13 +84,16 @@ In order to reproduce the results from Pytorch Yolov5 L and X, please:
   `git clone https://github.com/ultralytics/yolov5`
   `cd yolov5`
   `pip install -r requirements.txt`
-3. inside yolov5 folder download the trained weights (choose version (l or x l is faster x is better) and adjust image size if different from roboflow) here:  [YOLO v5X](https://drive.google.com/file/d/1fkev4tWwzn6s1n7gFE_8lfn18LQabHg-/view?usp=sharing), [YOLO v5L](https://drive.google.com/file/d/1Zdo2mm_BsAcmlXuNS0PtMPkju66AmP17/view?usp=sharing)
+3. inside yolov5 folder download the pre-trained weights (choose version (l or x l is faster x is better) and adjust image size if different from roboflow) here:  
   `python detect.py --weights yolov5l.pt --img 640` (the weights present are in the google folder)
   `python detect.py --weights yolov5x.pt --img 640`
 4. insert your train, test, valid folder inside the yolov5 folder where each train, test, and valid contains subfolders of images and labels. Make sure that the subfolder of labels contains txt where the label is a number and not a string.
 5. create a new .yaml file with data specification
 6. To train:
 `python train.py --img 640 --batch 12 --epochs 20 --data data/data.yaml --weights yolov5x.pt`
-7. To test:
-`python detect.py --source test_folder/test/images --weights wegihts_folder/best.pt --img 640 --save-txt --save-conf`
+
+7. The trained weights are present here [YOLO v5X](https://drive.google.com/file/d/1fkev4tWwzn6s1n7gFE_8lfn18LQabHg-/view?usp=sharing), [YOLO v5L](https://drive.google.com/file/d/1Zdo2mm_BsAcmlXuNS0PtMPkju66AmP17/view?usp=sharing)
+
+8. The trained weights are then used to test for new images with the following command :
+`python detect.py --source test_folder/test/images --weights weights_folder/best.pt --img 640 --save-txt --save-conf`
 
