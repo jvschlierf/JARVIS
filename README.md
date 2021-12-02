@@ -60,20 +60,20 @@ In order to reproduce the results from Darknet Yolov4, please:
 
 | Label        | Avg. IOU           |
 | ------------- |:-------------:| 
-| Adidas     | 0.871891 |
-| Apple Inc-     | 0.840646   |  
-| Coca-Cola | 0.893000   | 
-| Emirates     | 0.858639 |
-| Hard Rock Cafe	    | 0.843841      |  
-| Mercedes-Benz | 0.841095  | 
-| NFL     | 0.873054 |
-| Nike    | 0.827050      |  
-| Pepsi | 0.902139      | 
-| Puma | 0.861367     | 
-| Starbucks     | 0.889383 |
-| The North Face    | 0.850859    |  
-| Toyota | 0.854315      | 
-| Under Armour	 | 0.808131      |
+| Adidas     | 0.870254 |
+| Apple Inc-     | 0.845880   |  
+| Coca-Cola | 0.891550   | 
+| Emirates     | 0.863402 |
+| Hard Rock Cafe	    | 0.847951      |  
+| Mercedes-Benz | 0.832241  | 
+| NFL     | 0.864726 |
+| Nike    | 0.820951      |  
+| Pepsi | 0.905823      | 
+| Puma | 0.859121     | 
+| Starbucks     | 0.886776 |
+| The North Face    | 0.852864    |  
+| Toyota | 0.854814      | 
+| Under Armour	 | 0.820642      |
 
 
 In order to reproduce the results from Pytorch Yolov5 L and X, please:
