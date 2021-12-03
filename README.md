@@ -2,6 +2,17 @@
 This is a repo for the Computer Vision project, which is a part of the DSBA 2020-2022.
 Below the results for- and instructions to recreate the algorithms we built and trained.
 
+# Index
+
+### duplicate_images:
+Scripts to find duplicate images in the dataset
+
+### descriptive_stats.ipynb:
+Notebook with all the descriptive statistics on our datasets
+
+### merging_workspaces.py:
+Script to merge multiple Roboflow workspace into a single directory
+
 # Darknet (Yolov4) results
 
 
