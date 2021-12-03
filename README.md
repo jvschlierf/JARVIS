@@ -4,13 +4,19 @@ Below the results for- and instructions to recreate the algorithms we built and 
 
 # Index
 
-### duplicate_images:
+### - Darknet_Jarvis:
+Contains the necessary setup files and code for the evaluation of Darknet YoloV4. For the specifics on how to recreate our results refer to the dedicate section "Darknet (Yolov4) results"
+
+### - duplicate_images:
 Scripts to find duplicate images in the dataset
 
-### descriptive_stats.ipynb:
+### - yolov5:
+Contains the necessary setup files and code for the evaluation of Pytorch YoloV5. For the specifics on how to recreate our results refer to the dedicate section "Pytorch (Yolov5) results"
+
+### - descriptive_stats.ipynb:
 Notebook with all the descriptive statistics on our datasets
 
-### merging_workspaces.py:
+### - merging_workspaces.py:
 Script to merge multiple Roboflow workspace into a single directory
 
 # Darknet (Yolov4) results
