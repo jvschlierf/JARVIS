@@ -98,3 +98,4 @@ In order to reproduce the results from Pytorch Yolov5 L and X, please:
 8. The trained weights are then used to test for new images with the following command :
 `python detect.py --source test_folder/test/images --weights weights_folder/best.pt --img 640 --save-txt --save-conf`
 
+To see the analysis of performance, go to **performance_analysis_visualizations.ipynb** and the testing we did on the noise dataset, go to **testing_on_noise.ipynb**
