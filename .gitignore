@@ -1,6 +1,7 @@
 lab_01/data/
 object_detection/data/
 lab_01/logs/
+<<<<<<< HEAD
 lab_01/model/
 lab_01/.DS_Store
 lab_01/model/
@@ -10,3 +11,14 @@ lab_01/pretrained_trained/
 .idea/vcs.xml
 .idea/JARVIS.iml
 .idea/vcs.xml
+=======
+project_01/Output/
+project_01/Base_15/dlcv_last.weights
+project_01/Base_15/yolov4_last.weights
+<<<<<<< Updated upstream
+*.DS_Store
+=======
+lab_01/model/
+>>>>>>> Stashed changes
+/project_01/Data/
+>>>>>>> Darknet
